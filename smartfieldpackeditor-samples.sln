@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FieldPackEditorShowRoom", "FieldPackEditorShowRoom\FieldPackEditorShowRoom.csproj", "{5A87EF79-5F53-4BD0-8DAD-33D663D88D32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FieldPackEditorShowRoom-spg", "FieldPackEditorShowRoom-spg\FieldPackEditorShowRoom-spg.csproj", "{3236575B-556A-4973-B44D-CD7493B3E8AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A87EF79-5F53-4BD0-8DAD-33D663D88D32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A87EF79-5F53-4BD0-8DAD-33D663D88D32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A87EF79-5F53-4BD0-8DAD-33D663D88D32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A87EF79-5F53-4BD0-8DAD-33D663D88D32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3236575B-556A-4973-B44D-CD7493B3E8AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3236575B-556A-4973-B44D-CD7493B3E8AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3236575B-556A-4973-B44D-CD7493B3E8AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3236575B-556A-4973-B44D-CD7493B3E8AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D8C94C65-976C-4137-B4EF-D4939CA7DAA7}
+	EndGlobalSection
+EndGlobal

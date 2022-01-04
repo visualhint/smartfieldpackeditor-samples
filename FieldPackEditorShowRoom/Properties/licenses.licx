@@ -1,0 +1,6 @@
+VisualHint.SmartFieldPackEditor.DateTimePack.DateTimePicker, SmartFieldPackEditor, Version=1.3.2.12, Culture=neutral, PublicKeyToken=a8563289ed9b0ace
+VisualHint.SmartFieldPackEditor.DateTimePack.DataGridViewDateTimePicker, SmartFieldPackEditor, Version=1.3.2.12, Culture=neutral, PublicKeyToken=a8563289ed9b0ace
+VisualHint.SmartFieldPackEditor.LatitudeLongitude.LatLongEditor, SmartFieldPackEditor, Version=1.3.2.12, Culture=neutral, PublicKeyToken=a8563289ed9b0ace
+VisualHint.SmartFieldPackEditor.FieldPackEditor, SmartFieldPackEditor, Version=1.3.2.12, Culture=neutral, PublicKeyToken=a8563289ed9b0ace
+VisualHint.SmartFieldPackEditor.IpAddressPack.IpAddressEditor, SmartFieldPackEditor, Version=1.3.2.12, Culture=neutral, PublicKeyToken=a8563289ed9b0ace
+VisualHint.SmartFieldPackEditor.Duration.TimeSpanEditor, SmartFieldPackEditor, Version=1.3.2.12, Culture=neutral, PublicKeyToken=a8563289ed9b0ace
