@@ -30,13 +30,13 @@ namespace FieldPackEditorShowRoom
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -69,6 +69,10 @@ namespace FieldPackEditorShowRoom
             this.dtpBound2 = new VisualHint.SmartFieldPackEditor.FieldPackEditor();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.fulldateDataGridViewTextBoxColumn = new VisualHint.SmartFieldPackEditor.DateTimePack.DateTimePickerColumn();
+            this.booleanDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dateDataGridViewTextBoxColumn = new VisualHint.SmartFieldPackEditor.DateTimePack.DateTimePickerColumn();
+            this.timeDataGridViewTextBoxColumn = new VisualHint.SmartFieldPackEditor.DateTimePack.DateTimePickerColumn();
             this.Duration = new VisualHint.SmartFieldPackEditor.Duration.TimeSpanEditorColumn();
             this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sampleDataSet = new FieldPackEditorShowRoom.sampleDataSet();
@@ -111,10 +115,6 @@ namespace FieldPackEditorShowRoom
             this.dateTimePickerColumn2 = new VisualHint.SmartFieldPackEditor.DateTimePack.DateTimePickerColumn();
             this.dateTimePickerColumn3 = new VisualHint.SmartFieldPackEditor.DateTimePack.DateTimePickerColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.timeDataGridViewTextBoxColumn = new VisualHint.SmartFieldPackEditor.DateTimePack.DateTimePickerColumn();
-            this.dateDataGridViewTextBoxColumn = new VisualHint.SmartFieldPackEditor.DateTimePack.DateTimePickerColumn();
-            this.booleanDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.fulldateDataGridViewTextBoxColumn = new VisualHint.SmartFieldPackEditor.DateTimePack.DateTimePickerColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -253,10 +253,7 @@ namespace FieldPackEditorShowRoom
             this.smartDateTimePicker.ForeColor = System.Drawing.Color.MidnightBlue;
             this.smartDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.smartDateTimePicker.Location = new System.Drawing.Point(15, 41);
-            this.smartDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.smartDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.smartDateTimePicker.Name = "smartDateTimePicker";
-            this.smartDateTimePicker.Offset = new System.Drawing.Size(3, 0);
             this.smartDateTimePicker.Size = new System.Drawing.Size(211, 20);
             this.smartDateTimePicker.TabIndex = 1;
             this.smartDateTimePicker.Value = new System.DateTime(2010, 8, 19, 9, 44, 58, 847);
@@ -346,10 +343,7 @@ namespace FieldPackEditorShowRoom
             this.dateTimePicker3.FixedWidth = false;
             this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker3.Location = new System.Drawing.Point(23, 54);
-            this.dateTimePicker3.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dateTimePicker3.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Offset = new System.Drawing.Size(3, 0);
             this.dateTimePicker3.Size = new System.Drawing.Size(192, 20);
             this.dateTimePicker3.TabIndex = 2;
             this.dateTimePicker3.Value = new System.DateTime(2010, 8, 19, 9, 44, 59, 61);
@@ -371,10 +365,7 @@ namespace FieldPackEditorShowRoom
             this.dateTimePicker2.FixedWidth = false;
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker2.Location = new System.Drawing.Point(23, 52);
-            this.dateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Offset = new System.Drawing.Size(3, 0);
             this.dateTimePicker2.Size = new System.Drawing.Size(192, 20);
             this.dateTimePicker2.TabIndex = 1;
             this.dateTimePicker2.Value = new System.DateTime(2010, 8, 19, 9, 44, 59, 99);
@@ -398,10 +389,7 @@ namespace FieldPackEditorShowRoom
             this.dateTimePicker1.FixedWidth = false;
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(23, 54);
-            this.dateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Offset = new System.Drawing.Size(3, 0);
             this.dateTimePicker1.ShowCheckBox = true;
             this.dateTimePicker1.Size = new System.Drawing.Size(192, 20);
             this.dateTimePicker1.TabIndex = 0;
@@ -456,7 +444,6 @@ namespace FieldPackEditorShowRoom
             // 
             this.weekEditor.Location = new System.Drawing.Point(12, 140);
             this.weekEditor.Name = "weekEditor";
-            this.weekEditor.Offset = new System.Drawing.Size(3, 0);
             this.weekEditor.ShowUpDown = true;
             this.weekEditor.Size = new System.Drawing.Size(273, 20);
             this.weekEditor.TabIndex = 1;
@@ -512,8 +499,6 @@ namespace FieldPackEditorShowRoom
             this.dtpBound2.Location = new System.Drawing.Point(15, 93);
             this.dtpBound2.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
             this.dtpBound2.Name = "dtpBound2";
-            this.dtpBound2.Offset = new System.Drawing.Size(3, 0);
-            this.dtpBound2.ShowDropDown = true;
             this.dtpBound2.ShowUpDown = true;
             this.dtpBound2.Size = new System.Drawing.Size(200, 20);
             this.dtpBound2.TabIndex = 2;
@@ -545,6 +530,55 @@ namespace FieldPackEditorShowRoom
             this.dataGridView1.ShowCellToolTips = false;
             this.dataGridView1.Size = new System.Drawing.Size(664, 205);
             this.dataGridView1.TabIndex = 7;
+            // 
+            // fulldateDataGridViewTextBoxColumn
+            // 
+            this.fulldateDataGridViewTextBoxColumn.AcceptsBackSpaceKey = true;
+            this.fulldateDataGridViewTextBoxColumn.AcceptsDeleteKey = true;
+            this.fulldateDataGridViewTextBoxColumn.DataPropertyName = "fulldate";
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Linen;
+            dataGridViewCellStyle1.Format = "G";
+            this.fulldateDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
+            this.fulldateDataGridViewTextBoxColumn.HeaderText = "fulldate";
+            this.fulldateDataGridViewTextBoxColumn.Name = "fulldateDataGridViewTextBoxColumn";
+            this.fulldateDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.fulldateDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.fulldateDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // booleanDataGridViewCheckBoxColumn
+            // 
+            this.booleanDataGridViewCheckBoxColumn.DataPropertyName = "boolean";
+            this.booleanDataGridViewCheckBoxColumn.HeaderText = "bool";
+            this.booleanDataGridViewCheckBoxColumn.Name = "booleanDataGridViewCheckBoxColumn";
+            this.booleanDataGridViewCheckBoxColumn.Width = 40;
+            // 
+            // dateDataGridViewTextBoxColumn
+            // 
+            this.dateDataGridViewTextBoxColumn.AcceptsBackSpaceKey = true;
+            this.dateDataGridViewTextBoxColumn.AcceptsDeleteKey = true;
+            this.dateDataGridViewTextBoxColumn.DataPropertyName = "date";
+            dataGridViewCellStyle2.Format = "d";
+            this.dateDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dateDataGridViewTextBoxColumn.HeaderText = "date";
+            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
+            this.dateDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dateDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dateDataGridViewTextBoxColumn.Width = 80;
+            // 
+            // timeDataGridViewTextBoxColumn
+            // 
+            this.timeDataGridViewTextBoxColumn.AcceptsBackSpaceKey = true;
+            this.timeDataGridViewTextBoxColumn.AcceptsDeleteKey = true;
+            this.timeDataGridViewTextBoxColumn.DataPropertyName = "time";
+            dataGridViewCellStyle3.Format = "t";
+            this.timeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
+            this.timeDataGridViewTextBoxColumn.HeaderText = "time";
+            this.timeDataGridViewTextBoxColumn.Name = "timeDataGridViewTextBoxColumn";
+            this.timeDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.timeDataGridViewTextBoxColumn.ShowDropDown = false;
+            this.timeDataGridViewTextBoxColumn.ShowUpDown = true;
+            this.timeDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.timeDataGridViewTextBoxColumn.Width = 60;
             // 
             // Duration
             // 
@@ -702,10 +736,7 @@ namespace FieldPackEditorShowRoom
             this.dtpBound1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpBound1.Location = new System.Drawing.Point(15, 47);
             this.dtpBound1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
-            this.dtpBound1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpBound1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpBound1.Name = "dtpBound1";
-            this.dtpBound1.Offset = new System.Drawing.Size(3, 0);
             this.dtpBound1.ShowCheckBox = true;
             this.dtpBound1.Size = new System.Drawing.Size(200, 20);
             this.dtpBound1.TabIndex = 0;
@@ -748,7 +779,6 @@ namespace FieldPackEditorShowRoom
             this.durationEditor1.MinDuration = System.TimeSpan.Parse("00:00:00");
             this.durationEditor1.Name = "durationEditor1";
             this.durationEditor1.NullString = "Enter a duration";
-            this.durationEditor1.Offset = new System.Drawing.Size(3, 0);
             this.durationEditor1.ShowUpDown = true;
             this.durationEditor1.Size = new System.Drawing.Size(136, 20);
             this.durationEditor1.TabIndex = 10;
@@ -765,7 +795,7 @@ namespace FieldPackEditorShowRoom
             this.textBox7.TabIndex = 9;
             this.textBox7.TabStop = false;
             this.textBox7.Text = "Last creation for SFPE: a flexible TimeSpan editor with the format you want and a" +
-                "ll the base features provided by the FieldPackEditor.";
+    "ll the base features provided by the FieldPackEditor.";
             // 
             // groupBox8
             // 
@@ -785,12 +815,10 @@ namespace FieldPackEditorShowRoom
             this.ipAddressEditor1.Location = new System.Drawing.Point(11, 83);
             this.ipAddressEditor1.Name = "ipAddressEditor1";
             this.ipAddressEditor1.NullString = "Enter an IP address";
-            this.ipAddressEditor1.Offset = new System.Drawing.Size(3, 0);
             this.ipAddressEditor1.ShowUpDown = true;
             this.ipAddressEditor1.Size = new System.Drawing.Size(137, 20);
             this.ipAddressEditor1.TabIndex = 0;
             this.ipAddressEditor1.Text = "192.168.0.100";
-            this.ipAddressEditor1.Value = ((uint)(3232235620u));
             this.ipAddressEditor1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ipAddressEditor1_KeyDown);
             // 
             // textBox3
@@ -872,7 +900,6 @@ namespace FieldPackEditorShowRoom
             this.latLongEditor.Location = new System.Drawing.Point(11, 140);
             this.latLongEditor.LongitudeVisibility = true;
             this.latLongEditor.Name = "latLongEditor";
-            this.latLongEditor.Offset = new System.Drawing.Size(3, 0);
             this.latLongEditor.ShowUpDown = true;
             this.latLongEditor.Size = new System.Drawing.Size(214, 20);
             this.latLongEditor.TabIndex = 0;
@@ -987,55 +1014,6 @@ namespace FieldPackEditorShowRoom
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.Visible = false;
             this.dataGridViewTextBoxColumn2.Width = 60;
-            // 
-            // timeDataGridViewTextBoxColumn
-            // 
-            this.timeDataGridViewTextBoxColumn.AcceptsBackSpaceKey = true;
-            this.timeDataGridViewTextBoxColumn.AcceptsDeleteKey = true;
-            this.timeDataGridViewTextBoxColumn.DataPropertyName = "time";
-            dataGridViewCellStyle3.Format = "t";
-            this.timeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
-            this.timeDataGridViewTextBoxColumn.HeaderText = "time";
-            this.timeDataGridViewTextBoxColumn.Name = "timeDataGridViewTextBoxColumn";
-            this.timeDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.timeDataGridViewTextBoxColumn.ShowDropDown = false;
-            this.timeDataGridViewTextBoxColumn.ShowUpDown = true;
-            this.timeDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.timeDataGridViewTextBoxColumn.Width = 60;
-            // 
-            // dateDataGridViewTextBoxColumn
-            // 
-            this.dateDataGridViewTextBoxColumn.AcceptsBackSpaceKey = true;
-            this.dateDataGridViewTextBoxColumn.AcceptsDeleteKey = true;
-            this.dateDataGridViewTextBoxColumn.DataPropertyName = "date";
-            dataGridViewCellStyle2.Format = "d";
-            this.dateDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dateDataGridViewTextBoxColumn.HeaderText = "date";
-            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
-            this.dateDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dateDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dateDataGridViewTextBoxColumn.Width = 80;
-            // 
-            // booleanDataGridViewCheckBoxColumn
-            // 
-            this.booleanDataGridViewCheckBoxColumn.DataPropertyName = "boolean";
-            this.booleanDataGridViewCheckBoxColumn.HeaderText = "bool";
-            this.booleanDataGridViewCheckBoxColumn.Name = "booleanDataGridViewCheckBoxColumn";
-            this.booleanDataGridViewCheckBoxColumn.Width = 40;
-            // 
-            // fulldateDataGridViewTextBoxColumn
-            // 
-            this.fulldateDataGridViewTextBoxColumn.AcceptsBackSpaceKey = true;
-            this.fulldateDataGridViewTextBoxColumn.AcceptsDeleteKey = true;
-            this.fulldateDataGridViewTextBoxColumn.DataPropertyName = "fulldate";
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Linen;
-            dataGridViewCellStyle1.Format = "G";
-            this.fulldateDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
-            this.fulldateDataGridViewTextBoxColumn.HeaderText = "fulldate";
-            this.fulldateDataGridViewTextBoxColumn.Name = "fulldateDataGridViewTextBoxColumn";
-            this.fulldateDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.fulldateDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.fulldateDataGridViewTextBoxColumn.Width = 150;
             // 
             // Form1
             // 

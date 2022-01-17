@@ -56,14 +56,14 @@
     <Reference Include="Skybound.VisualTips">
       <HintPath>.\Skybound.VisualTips.dll</HintPath>
     </Reference>
-    <Reference Include="SmartFieldPackEditor, Version=1.4.76.0, Culture=neutral, PublicKeyToken=a8563289ed9b0ace, processorArchitecture=MSIL">
-      <HintPath>..\packages\VisualHint.SmartFieldPackEditor.1.4.76\lib\net40\SmartFieldPackEditor.dll</HintPath>
+    <Reference Include="SmartFieldPackEditor, Version=1.4.77.0, Culture=neutral, PublicKeyToken=a8563289ed9b0ace, processorArchitecture=MSIL">
+      <HintPath>..\packages\VisualHint.SmartFieldPackEditor.1.4.77\lib\net40\SmartFieldPackEditor.dll</HintPath>
     </Reference>
-    <Reference Include="SmartPropertyGrid, Version=3.4.86.0, Culture=neutral, PublicKeyToken=717018457dd20991, processorArchitecture=MSIL">
-      <HintPath>..\packages\VisualHint.SmartPropertyGrid.3.4.86\lib\net40\SmartPropertyGrid.dll</HintPath>
+    <Reference Include="SmartPropertyGrid, Version=3.4.87.0, Culture=neutral, PublicKeyToken=717018457dd20991, processorArchitecture=MSIL">
+      <HintPath>..\packages\VisualHint.SmartPropertyGrid.3.4.87\lib\net40\SmartPropertyGrid.dll</HintPath>
     </Reference>
     <Reference Include="SpgSfpeAdapter, Version=1.4.0.82, Culture=neutral, PublicKeyToken=a8a3c8953efb77eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\VisualHint.SpgSfpeAdapter.1.4.76\lib\net40\SpgSfpeAdapter.dll</HintPath>
+      <HintPath>..\packages\VisualHint.SpgSfpeAdapter.1.4.77\lib\net40\SpgSfpeAdapter.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

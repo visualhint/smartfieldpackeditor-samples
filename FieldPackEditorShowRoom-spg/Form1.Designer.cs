@@ -52,6 +52,8 @@ namespace DateTimePickerShowRoom
             this.label3 = new System.Windows.Forms.Label();
             this.tbComments = new System.Windows.Forms.TextBox();
             this.cbCustomFormat = new System.Windows.Forms.ComboBox();
+            this.smartPropertyGrid = new DateTimePickerShowRoom.MyPropertyGrid();
+            this.smartDateTimePicker = new DateTimePickerShowRoom.MyDateTimePicker();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dateTimePicker3 = new VisualHint.SmartFieldPackEditor.DateTimePack.DateTimePicker();
@@ -93,6 +95,7 @@ namespace DateTimePickerShowRoom
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
+            this.timeSpanEditor = new DateTimePickerShowRoom.MyTimeSpanEditor();
             this.smartPropertyGrid2 = new VisualHint.SmartPropertyGrid.PropertyGrid();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.ipAddrEditor = new VisualHint.SmartFieldPackEditor.IpAddressPack.IpAddressEditor();
@@ -113,13 +116,12 @@ namespace DateTimePickerShowRoom
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.smartPropertyGrid = new DateTimePickerShowRoom.MyPropertyGrid();
-            this.smartDateTimePicker = new DateTimePickerShowRoom.MyDateTimePicker();
-            this.timeSpanEditor = new DateTimePickerShowRoom.MyTimeSpanEditor();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.smartPropertyGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.smartDateTimePicker)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimePicker3)).BeginInit();
@@ -141,6 +143,7 @@ namespace DateTimePickerShowRoom
             ((System.ComponentModel.ISupportInitialize)(this.dtpBound1)).BeginInit();
             this.tabPage5.SuspendLayout();
             this.groupBox9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.timeSpanEditor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.smartPropertyGrid2)).BeginInit();
             this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ipAddrEditor)).BeginInit();
@@ -148,9 +151,6 @@ namespace DateTimePickerShowRoom
             ((System.ComponentModel.ISupportInitialize)(this.latLongEditor)).BeginInit();
             this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.smartPropertyGrid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.smartDateTimePicker)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timeSpanEditor)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -315,6 +315,39 @@ namespace DateTimePickerShowRoom
             this.cbCustomFormat.Text = "dd MMMM yyyy \'at\' HH:mm:ss.fff";
             this.cbCustomFormat.TextChanged += new System.EventHandler(this.cbCustomFormat_TextChanged);
             // 
+            // smartPropertyGrid
+            // 
+            this.smartPropertyGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.smartPropertyGrid.CommentsHeight = 60;
+            this.smartPropertyGrid.Location = new System.Drawing.Point(326, 35);
+            this.smartPropertyGrid.Name = "smartPropertyGrid";
+            this.smartPropertyGrid.PropertyLabelBackColor = System.Drawing.SystemColors.Window;
+            this.smartPropertyGrid.PropertyValueBackColor = System.Drawing.SystemColors.Window;
+            this.smartPropertyGrid.Size = new System.Drawing.Size(326, 246);
+            this.smartPropertyGrid.TabIndex = 3;
+            this.smartPropertyGrid.Text = "propertyGrid1";
+            this.smartPropertyGrid.ToolTipMode = VisualHint.SmartPropertyGrid.PropertyGrid.ToolTipModes.ToolTipsOnValues;
+            this.smartPropertyGrid.PropertyChanged += new VisualHint.SmartPropertyGrid.PropertyGrid.PropertyChangedEventHandler(this.smartPropertyGrid_PropertyChanged);
+            // 
+            // smartDateTimePicker
+            // 
+            this.smartDateTimePicker.BackColor = System.Drawing.Color.Ivory;
+            this.smartDateTimePicker.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.smartDateTimePicker.CustomFormat = "dd MMMM yyyy \'at\' HH:mm:ss.fff";
+            this.smartDateTimePicker.FixedWidth = false;
+            this.smartDateTimePicker.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.smartDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.smartDateTimePicker.Location = new System.Drawing.Point(15, 41);
+            this.smartDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.smartDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.smartDateTimePicker.Name = "smartDateTimePicker";
+            this.smartDateTimePicker.Offset = new System.Drawing.Size(3, 0);
+            this.smartDateTimePicker.ShowCalendarClearButton = true;
+            this.smartDateTimePicker.ShowCalendarTodayButton = true;
+            this.smartDateTimePicker.Size = new System.Drawing.Size(298, 20);
+            this.smartDateTimePicker.TabIndex = 0;
+            this.smartDateTimePicker.Value = new System.DateTime(2022, 1, 17, 14, 18, 57, 470);
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.groupBox5);
@@ -340,13 +373,18 @@ namespace DateTimePickerShowRoom
             // 
             // dateTimePicker3
             // 
+            this.dateTimePicker3.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker3.CustomFormat = "dd MMMM yyyy \'at\' HH:mm:ss.fff";
             this.dateTimePicker3.FixedWidth = false;
             this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker3.Location = new System.Drawing.Point(23, 54);
+            this.dateTimePicker3.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dateTimePicker3.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Offset = new System.Drawing.Size(3, 0);
             this.dateTimePicker3.Size = new System.Drawing.Size(192, 20);
             this.dateTimePicker3.TabIndex = 2;
+            this.dateTimePicker3.Value = new System.DateTime(2022, 1, 17, 14, 18, 57, 512);
             // 
             // groupBox4
             // 
@@ -360,13 +398,18 @@ namespace DateTimePickerShowRoom
             // 
             // dateTimePicker2
             // 
+            this.dateTimePicker2.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker2.CustomFormat = "dd MMMM yyyy \'at\' HH:mm:ss.fff";
             this.dateTimePicker2.FixedWidth = false;
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker2.Location = new System.Drawing.Point(23, 52);
+            this.dateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Offset = new System.Drawing.Size(3, 0);
             this.dateTimePicker2.Size = new System.Drawing.Size(192, 20);
             this.dateTimePicker2.TabIndex = 1;
+            this.dateTimePicker2.Value = new System.DateTime(2022, 1, 17, 14, 18, 57, 557);
             // 
             // groupBox3
             // 
@@ -380,15 +423,20 @@ namespace DateTimePickerShowRoom
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.CheckBoxMode = VisualHint.SmartFieldPackEditor.FieldPackEditor.CheckBoxModes.Nullify;
             this.dateTimePicker1.CustomFormat = "dd MMMM yyyy \'at\' HH:mm:ss.fff";
             this.dateTimePicker1.FixedWidth = false;
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(23, 54);
+            this.dateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Offset = new System.Drawing.Size(3, 0);
             this.dateTimePicker1.ShowCheckBox = true;
             this.dateTimePicker1.Size = new System.Drawing.Size(192, 20);
             this.dateTimePicker1.TabIndex = 0;
+            this.dateTimePicker1.Value = new System.DateTime(2022, 1, 17, 14, 18, 57, 582);
             // 
             // tabPage4
             // 
@@ -439,6 +487,7 @@ namespace DateTimePickerShowRoom
             // 
             this.weekEditor.Location = new System.Drawing.Point(12, 140);
             this.weekEditor.Name = "weekEditor";
+            this.weekEditor.Offset = new System.Drawing.Size(3, 0);
             this.weekEditor.ShowUpDown = true;
             this.weekEditor.Size = new System.Drawing.Size(273, 20);
             this.weekEditor.TabIndex = 1;
@@ -494,7 +543,7 @@ namespace DateTimePickerShowRoom
             this.dtpBound2.Location = new System.Drawing.Point(15, 93);
             this.dtpBound2.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
             this.dtpBound2.Name = "dtpBound2";
-            this.dtpBound2.ShowDropDown = true;
+            this.dtpBound2.Offset = new System.Drawing.Size(3, 0);
             this.dtpBound2.ShowUpDown = true;
             this.dtpBound2.Size = new System.Drawing.Size(200, 20);
             this.dtpBound2.TabIndex = 1;
@@ -720,6 +769,7 @@ namespace DateTimePickerShowRoom
             // 
             // dtpBound1
             // 
+            this.dtpBound1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpBound1.CustomFormat = "G";
             this.dtpBound1.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.tableBindingSource, "boolean", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.dtpBound1.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.tableBindingSource, "fulldate", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
@@ -727,10 +777,14 @@ namespace DateTimePickerShowRoom
             this.dtpBound1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpBound1.Location = new System.Drawing.Point(15, 47);
             this.dtpBound1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
+            this.dtpBound1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpBound1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpBound1.Name = "dtpBound1";
+            this.dtpBound1.Offset = new System.Drawing.Size(3, 0);
             this.dtpBound1.ShowCheckBox = true;
             this.dtpBound1.Size = new System.Drawing.Size(200, 20);
             this.dtpBound1.TabIndex = 0;
+            this.dtpBound1.Value = new System.DateTime(2022, 1, 17, 14, 18, 57, 713);
             this.dtpBound1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dtpBound1_KeyDown);
             // 
             // tabPage5
@@ -769,7 +823,26 @@ namespace DateTimePickerShowRoom
             this.textBox7.TabIndex = 9;
             this.textBox7.TabStop = false;
             this.textBox7.Text = "Last creation for SFPE: a flexible TimeSpan editor with the format you want and a" +
-                "ll the base features provided by the FieldPackEditor.";
+    "ll the base features provided by the FieldPackEditor.";
+            // 
+            // timeSpanEditor
+            // 
+            this.timeSpanEditor.AcceptsDeleteKey = true;
+            this.timeSpanEditor.CheckBoxMode = VisualHint.SmartFieldPackEditor.FieldPackEditor.CheckBoxModes.Nullify;
+            this.timeSpanEditor.CustomFormat = "d \'days\' h:m:s";
+            this.timeSpanEditor.FixedWidth = false;
+            this.timeSpanEditor.Format = VisualHint.SmartFieldPackEditor.Duration.TimeSpanEditor.TimeSpanEditorFormat.Custom;
+            this.timeSpanEditor.JumpToNextFieldOnEdition = true;
+            this.timeSpanEditor.Location = new System.Drawing.Point(57, 83);
+            this.timeSpanEditor.MaxDuration = System.TimeSpan.Parse("10675199.02:48:05.4775807");
+            this.timeSpanEditor.MinDuration = System.TimeSpan.Parse("00:00:00");
+            this.timeSpanEditor.Name = "timeSpanEditor";
+            this.timeSpanEditor.NullString = "Enter a duration";
+            this.timeSpanEditor.Offset = new System.Drawing.Size(3, 0);
+            this.timeSpanEditor.ShowUpDown = true;
+            this.timeSpanEditor.Size = new System.Drawing.Size(136, 20);
+            this.timeSpanEditor.TabIndex = 0;
+            this.timeSpanEditor.Value = System.TimeSpan.Parse("2.01:29:59");
             // 
             // smartPropertyGrid2
             // 
@@ -782,8 +855,8 @@ namespace DateTimePickerShowRoom
             this.smartPropertyGrid2.TabIndex = 1;
             this.smartPropertyGrid2.Text = "propertyGrid1";
             this.smartPropertyGrid2.ToolTipMode = ((VisualHint.SmartPropertyGrid.PropertyGrid.ToolTipModes)((VisualHint.SmartPropertyGrid.PropertyGrid.ToolTipModes.ToolTipsOnLabels | VisualHint.SmartPropertyGrid.PropertyGrid.ToolTipModes.ToolTipsOnValues)));
-            this.smartPropertyGrid2.InPlaceCtrlHidden += new VisualHint.SmartPropertyGrid.PropertyGrid.InPlaceCtrlHiddenEventHandler(this.smartPropertyGrid2_InPlaceCtrlHidden);
             this.smartPropertyGrid2.InPlaceCtrlCreated += new VisualHint.SmartPropertyGrid.PropertyGrid.InPlaceCtrlCreatedEventHandler(this.smartPropertyGrid2_InPlaceCtrlCreated);
+            this.smartPropertyGrid2.InPlaceCtrlHidden += new VisualHint.SmartPropertyGrid.PropertyGrid.InPlaceCtrlHiddenEventHandler(this.smartPropertyGrid2_InPlaceCtrlHidden);
             // 
             // groupBox8
             // 
@@ -802,10 +875,11 @@ namespace DateTimePickerShowRoom
             this.ipAddrEditor.Location = new System.Drawing.Point(120, 83);
             this.ipAddrEditor.Name = "ipAddrEditor";
             this.ipAddrEditor.NullString = "Enter an IP address";
+            this.ipAddrEditor.Offset = new System.Drawing.Size(3, 0);
             this.ipAddrEditor.ShowUpDown = true;
             this.ipAddrEditor.Size = new System.Drawing.Size(137, 20);
             this.ipAddrEditor.TabIndex = 0;
-            this.ipAddrEditor.Text = "";
+            this.ipAddrEditor.Value = null;
             this.ipAddrEditor.ValueChanged += new System.EventHandler(this.ipAddrEditor_ValueChanged);
             this.ipAddrEditor.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ipAddrEditor_KeyDown);
             // 
@@ -845,12 +919,13 @@ namespace DateTimePickerShowRoom
             this.latLongEditor.Location = new System.Drawing.Point(11, 140);
             this.latLongEditor.LongitudeVisibility = true;
             this.latLongEditor.Name = "latLongEditor";
+            this.latLongEditor.Offset = new System.Drawing.Size(3, 0);
             this.latLongEditor.ShowUpDown = true;
             this.latLongEditor.Size = new System.Drawing.Size(214, 20);
             this.latLongEditor.TabIndex = 0;
             this.latLongEditor.TabKeyNavigationMode = VisualHint.SmartFieldPackEditor.FieldPackEditor.TabKeyNavigationModes.EachPack;
-            this.latLongEditor.LongitudeChanged += new System.EventHandler(this.latLongEditor_LongitudeChanged);
             this.latLongEditor.LatitudeChanged += new System.EventHandler(this.latLongEditor_LatitudeChanged);
+            this.latLongEditor.LongitudeChanged += new System.EventHandler(this.latLongEditor_LongitudeChanged);
             // 
             // label9
             // 
@@ -982,52 +1057,6 @@ namespace DateTimePickerShowRoom
             this.dataGridViewTextBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewTextBoxColumn3.Width = 60;
             // 
-            // smartPropertyGrid
-            // 
-            this.smartPropertyGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.smartPropertyGrid.CommentsHeight = 60;
-            this.smartPropertyGrid.Location = new System.Drawing.Point(326, 35);
-            this.smartPropertyGrid.Name = "smartPropertyGrid";
-            this.smartPropertyGrid.PropertyLabelBackColor = System.Drawing.SystemColors.Window;
-            this.smartPropertyGrid.PropertyValueBackColor = System.Drawing.SystemColors.Window;
-            this.smartPropertyGrid.Size = new System.Drawing.Size(326, 246);
-            this.smartPropertyGrid.TabIndex = 3;
-            this.smartPropertyGrid.Text = "propertyGrid1";
-            this.smartPropertyGrid.ToolTipMode = VisualHint.SmartPropertyGrid.PropertyGrid.ToolTipModes.ToolTipsOnValues;
-            this.smartPropertyGrid.PropertyChanged += new VisualHint.SmartPropertyGrid.PropertyGrid.PropertyChangedEventHandler(this.smartPropertyGrid_PropertyChanged);
-            // 
-            // smartDateTimePicker
-            // 
-            this.smartDateTimePicker.BackColor = System.Drawing.Color.Ivory;
-            this.smartDateTimePicker.CustomFormat = "dd MMMM yyyy \'at\' HH:mm:ss.fff";
-            this.smartDateTimePicker.FixedWidth = false;
-            this.smartDateTimePicker.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.smartDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.smartDateTimePicker.Location = new System.Drawing.Point(15, 41);
-            this.smartDateTimePicker.Name = "smartDateTimePicker";
-            this.smartDateTimePicker.ShowCalendarClearButton = true;
-            this.smartDateTimePicker.ShowCalendarTodayButton = true;
-            this.smartDateTimePicker.Size = new System.Drawing.Size(298, 20);
-            this.smartDateTimePicker.TabIndex = 0;
-            // 
-            // timeSpanEditor
-            // 
-            this.timeSpanEditor.AcceptsDeleteKey = true;
-            this.timeSpanEditor.CheckBoxMode = VisualHint.SmartFieldPackEditor.FieldPackEditor.CheckBoxModes.Nullify;
-            this.timeSpanEditor.CustomFormat = "d \'days\' h:m:s";
-            this.timeSpanEditor.FixedWidth = false;
-            this.timeSpanEditor.Format = VisualHint.SmartFieldPackEditor.Duration.TimeSpanEditor.TimeSpanEditorFormat.Custom;
-            this.timeSpanEditor.JumpToNextFieldOnEdition = true;
-            this.timeSpanEditor.Location = new System.Drawing.Point(57, 83);
-            this.timeSpanEditor.MaxDuration = System.TimeSpan.Parse("10675199.02:48:05.4775807");
-            this.timeSpanEditor.MinDuration = System.TimeSpan.Parse("00:00:00");
-            this.timeSpanEditor.Name = "timeSpanEditor";
-            this.timeSpanEditor.NullString = "Enter a duration";
-            this.timeSpanEditor.ShowUpDown = true;
-            this.timeSpanEditor.Size = new System.Drawing.Size(136, 20);
-            this.timeSpanEditor.TabIndex = 0;
-            this.timeSpanEditor.Value = System.TimeSpan.Parse("2.01:29:59");
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1043,6 +1072,8 @@ namespace DateTimePickerShowRoom
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.smartPropertyGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.smartDateTimePicker)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dateTimePicker3)).EndInit();
@@ -1069,6 +1100,7 @@ namespace DateTimePickerShowRoom
             this.tabPage5.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.timeSpanEditor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.smartPropertyGrid2)).EndInit();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
@@ -1079,9 +1111,6 @@ namespace DateTimePickerShowRoom
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.smartPropertyGrid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.smartDateTimePicker)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timeSpanEditor)).EndInit();
             this.ResumeLayout(false);
 
         }
