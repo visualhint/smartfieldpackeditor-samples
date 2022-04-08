@@ -54,7 +54,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="SmartFieldPackEditor, Version=1.4.77.0, Culture=neutral, PublicKeyToken=a8563289ed9b0ace, processorArchitecture=MSIL">
-      <HintPath>..\packages\VisualHint.SmartFieldPackEditor.1.4.77\lib\net40\SmartFieldPackEditor.dll</HintPath>
+      <HintPath>..\packages\VisualHint.SmartFieldPackEditor.Trial.1.4.77\lib\net40\SmartFieldPackEditor.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
